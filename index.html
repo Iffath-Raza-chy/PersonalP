@@ -23,6 +23,20 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script> 
+    function stickyMenu(){
+      var stick=document.getElementById('sticky'); 
+      if (window.pageYOffset>200){
+        sticky.classList.add('sticky');
+      }
+      else{ 
+        sticky.classList.remove('sticky');
+      }
+    }
+  window.onscroll=function(){
+    stickyMenu();
+  }
+  </script>
 </head>
 
 <body>
